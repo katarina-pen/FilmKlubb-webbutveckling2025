@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmKlubb</title>
+    <link rel="stylesheet" type="text/css" href="/css/film.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class=grid-con-top>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo">
+                <img src="/media/Text_version_smol_-removebg-preview.png" alt="FilmKlubb logo">
+            </div>
+            <!-- hamburger button -->
+            <button class="hamburger">
+                <i class="menuIcon material-icons"> menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </nav>
+
+        <ul class="menu">
+            <li><a class="menuItem" href="/html/index.html">Home</a></li>
+            <li><a class="menuItem" href="/html/film.html">Watched</a></li>
+            <li><a class="menuItem" href="/html/Movie-info.html">Movie Info</a></li>
+            <li><a class="menuItem" href="/html/about.html">About</a></li>
+        </ul>
+
+        <!-- Page title -->
+        <header class="Page-title">
+            <h4>Filmer</h4>
+        </header>
+
+    </div>
+
+    <div class="grid-con-main">
+        <article class="about">
+            <h3>Filmer vi har sett</h3>
+            <h4> Här kommer vi lägga ut alla filmer vi har tittat på hittills!</h4>
+        </article>
+
+        <section class="FilmSlideshow">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="/html/Movie-info.html">
+                        <img src="/media/filmerBilder/howls-moving-castle-3b.jpg" alt="Howls Moving Castle"
+                            style="width:100%">
+                    </a>
+                    <div class="text">Howls Moving Castle</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="/html/Movie-info.html">
+                        <img src="/media/filmerBilder/dune.jpg" alt="Dune" style="width:100%">
+                    </a>
+                    <div class="text">Dune</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <a href="/html/Movie-info.html">
+                        <img src="/media/filmerBilder/Mean_Girls.jfif" alt="Mean Girls" style="width:100%">
+                    </a>
+                    <div class="text">Mean Girls</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <a href="/html/Movie-info.html">
+                        <img src="/media/filmerBilder/Night-at-the-museum.jpg" alt="Nigh at the museum"
+                            style="width:100%">
+                    </a>
+                    <div class="text">Night at the museum</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/media/filmerBilder/Rest-of-list.png" style="width:100%">
+                    <div class="text"><a href="/html/Movie-info.html">Click Here!</a></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="grid-con-end">
+        <footer class="all-info">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis corporis aut minima tempora
+                fugit assumenda, eaque ipsum totam, inventore beatae. Numquam veritatis, ea maxime praesentium aperiam
+                porro sunt eaque!</h4>
+        </footer>
+    </div>
+
+
+    <script src="/javascript/film.js">
+    </script>
+</body>
+
+</html>
