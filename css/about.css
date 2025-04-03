@@ -78,6 +78,7 @@
     list-style: none;
     padding-top: 4rem;
     text-align: center;
+    font-family: "Public Sans", sans-serif;
 }
 
 .menuItem {
@@ -89,20 +90,22 @@
 }
 
 .Page-title {
-    /* background-color: forestgreen; */
     text-align: center;
+    font-family: "Public Sans", sans-serif;
 }
 
 .about {
     background-color: rebeccapurple;
     padding: 15px;
     margin-bottom: 20px;
+    font-family: "Public Sans", sans-serif;
 }
 
 .info {
     background-color: yellow;
     padding: 15px;
     margin-bottom: 20px;
+    font-family: "Public Sans", sans-serif;
 }
 
 .all-info {
@@ -112,6 +115,7 @@
     align-items: center;
     background-color: green;
     padding: 15px;
+    font-family: "Public Sans", sans-serif;
 }
 
 
