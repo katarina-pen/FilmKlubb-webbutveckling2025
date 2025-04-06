@@ -38,6 +38,7 @@
     align-items: center;
     padding: 10px 20px;
     color: white;
+    width: 100%;
 }
 
 .logo img {
@@ -99,28 +100,31 @@
     padding: 15px;
     margin-bottom: 20px;
     font-family: "Public Sans", sans-serif;
+    width: 100%;
 }
 
 
 /* movie info */
 .info {
-    background-color: yellow;
     padding: 15px;
     margin-bottom: 20px;
     font-family: "Public Sans", sans-serif;
 }
 
 .movie-header {
-    background-color: brown;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     font-size: 0.9 rem;
+    height: 200px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
 }
 
 .movie-image {
-    width: 100%;
+    width: 400px;
     max-width: 400px;
     margin: 0 auto 10px;
     overflow: hidden;
@@ -132,18 +136,17 @@
 }
 
 .movie-image img {
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
 
 .movie-description {
-    background-color: turquoise;
     padding: 10px;
     border-radius: 5px;
     font-size: 0.9rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
 }
 
 /* icon color */
@@ -158,22 +161,47 @@
 
 
 
-/* footer */
+/* FOOTER */
 .all-info {
-    min-height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    padding: 15px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: rebeccapurple;
     font-family: "Public Sans", sans-serif;
+    color: black;
+    width: 100%;
+}
+
+.all-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.all-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.all-info ul li {
+    margin-bottom: 10px;
+}
+
+.all-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-info a:hover {
+    text-decoration: underline;
 }
 
 
 /* DESKTOP .*/
 @media screen and (min-width: 768px) {
     body {
-        background-color: blueviolet;
+        background-color: #402061;
     }
 
     .grid-con-top {
@@ -184,7 +212,7 @@
         width: 100%;
         height: auto;
         margin-bottom: 50px;
-        background-color: yellow;
+
     }
 
     /* Hides the hamburger menu on desktop */
@@ -209,6 +237,7 @@
     .menuItem {
         margin: 0 15px;
         display: inline-block;
+        color: lavender;
     }
 
     .navbar {
@@ -222,10 +251,34 @@
 
 
 
-    /* Adjust main content to be side by side */
+    /* Adjust main content to be side by side
     .grid-con-main {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+    } */
+    .all-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding: 40px;
+        gap: 40px;
     }
+
+    .hittas-oss,
+    .uppdaterad,
+    .kontakta-oss {
+        flex: 1;
+    }
+
+    .kontakta-oss {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+
 }

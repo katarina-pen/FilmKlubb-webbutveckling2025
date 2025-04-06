@@ -79,6 +79,7 @@
     padding-top: 4rem;
     text-align: center;
     font-family: "Public Sans", sans-serif;
+    font-size: xx-large;
 }
 
 .menuItem {
@@ -121,12 +122,7 @@
     margin-bottom: 8px;
 }
 
-.info {
-    background-color: yellow;
-    padding: 15px;
-    margin-bottom: 20px;
-    font-family: "Public Sans", sans-serif;
-}
+
 
 /* FOOTER */
 .all-info {
@@ -169,7 +165,7 @@
 /* DESKTOP .*/
 @media screen and (min-width: 768px) {
     body {
-        background-color: blueviolet;
+        background-color: #402061;
     }
 
     .grid-con-top {
@@ -180,7 +176,7 @@
         width: 100%;
         height: auto;
         margin-bottom: 50px;
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
     /* Hides the hamburger menu on desktop */
@@ -194,18 +190,20 @@
         transform: none;
         display: flex;
         background-color: rebeccapurple;
-        color: white;
         list-style: none;
         padding: 20.5px 0;
         margin: 0;
         justify-content: center;
         width: 100%;
+        font-size: 15px;
     }
 
     .menuItem {
         margin: 0 15px;
         display: inline-block;
+        color: lavender;
     }
+
 
     .navbar {
         width: 100%;
@@ -214,6 +212,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
+        background-color: rebeccapurple;
     }
 
 

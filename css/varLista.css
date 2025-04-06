@@ -79,6 +79,7 @@
     padding-top: 4rem;
     text-align: center;
     font-family: "Public Sans", sans-serif;
+    font-size: xx-large;
 }
 
 .menuItem {
@@ -116,7 +117,16 @@
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+    /* display: none; */
+}
+
+.mySlides img {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust this to your desired max width */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Next & previous buttons */
@@ -150,9 +160,9 @@
 
 /* Caption text */
 .text {
-    color: red;
-    /* text-shadow: 2px 2px white; */
-    font-size: 15px;
+    color: lavender;
+    text-shadow: 2px 2px black;
+    font-size: 30px;
     font-weight: 600;
     padding: 8px 12px;
     position: absolute;
@@ -193,6 +203,7 @@
     animation-duration: 1.5s;
 }
 
+
 @keyframes fade {
     from {
         opacity: .4
@@ -203,21 +214,46 @@
     }
 }
 
+/* FOOTER */
 .all-info {
-    min-height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
     background-color: rebeccapurple;
-    padding: 15px;
     font-family: "Public Sans", sans-serif;
+    color: black;
+}
+
+.all-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.all-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.all-info ul li {
+    margin-bottom: 10px;
+}
+
+.all-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-info a:hover {
+    text-decoration: underline;
 }
 
 
 /* DESKTOP .*/
 @media screen and (min-width: 768px) {
     body {
-        background-color: blueviolet;
+        background-color: #402061;
     }
 
     .grid-con-top {
@@ -228,7 +264,7 @@
         width: 100%;
         height: auto;
         margin-bottom: 50px;
-        background-color: yellow;
+
     }
 
     /* Hides the hamburger menu on desktop */
@@ -248,11 +284,13 @@
         margin: 0;
         justify-content: center;
         width: 100%;
+        font-size: 15px;
     }
 
     .menuItem {
         margin: 0 15px;
         display: inline-block;
+        color: lavender;
     }
 
     .navbar {
@@ -262,6 +300,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
+        background-color: rebeccapurple;
     }
 
 
@@ -272,4 +311,28 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .all-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .hittas-oss,
+    .uppdaterad,
+    .kontakta-oss {
+        flex: 1;
+    }
+
+    .kontakta-oss {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
 }
