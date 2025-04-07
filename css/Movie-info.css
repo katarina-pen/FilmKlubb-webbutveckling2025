@@ -10,7 +10,6 @@
     height: auto;
     margin-bottom: 30px;
     padding: 10px;
-    /* background-color: aqua; */
 }
 
 .grid-con-main {
@@ -19,7 +18,6 @@
     min-height: 200px;
     height: auto;
     width: 100%;
-    /* background-color: yellowgreen; */
 }
 
 
@@ -27,7 +25,6 @@
     display: grid;
     min-height: 200px;
     margin-bottom: 20px;
-    /* background-color: aquamarine; */
 }
 
 
@@ -46,6 +43,7 @@
     width: auto;
 }
 
+/* Hamburgar menyn koden är gjord / lånad av dev.to */
 .hamburger {
     position: fixed;
     z-index: 100;
@@ -80,6 +78,7 @@
     padding-top: 4rem;
     text-align: center;
     font-family: "Public Sans", sans-serif;
+    font-size: xx-large;
 }
 
 .menuItem {
@@ -93,6 +92,8 @@
 .Page-title {
     text-align: center;
     font-family: "Public Sans", sans-serif;
+    font-size: 30px;
+    color: rebeccapurple;
 }
 
 .about {
@@ -101,6 +102,7 @@
     margin-bottom: 20px;
     font-family: "Public Sans", sans-serif;
     width: 100%;
+    color: #e6e6fa;
 }
 
 
@@ -115,12 +117,13 @@
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
     height: 200px;
     width: 400px;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #663399;
 }
 
 .movie-image {
@@ -129,10 +132,6 @@
     margin: 0 auto 10px;
     overflow: hidden;
     border-radius: 8px;
-    /* aspect-ratio: 16/9;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .movie-image img {
@@ -146,7 +145,7 @@
     padding: 10px;
     border-radius: 5px;
     font-size: 0.9rem;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    color: rebeccapurple;
 }
 
 /* icon color */
@@ -232,6 +231,7 @@
         margin: 0;
         justify-content: center;
         width: 100%;
+        font-size: 15px;
     }
 
     .menuItem {
@@ -249,14 +249,25 @@
         padding: 0 20px;
     }
 
+    .Page-title {
+        color: rebeccapurple;
+        text-shadow: 1px 1px white;
+    }
 
-
-    /* Adjust main content to be side by side
-    .grid-con-main {
+    .Page-title h4 {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    } */
+        text-align: center;
+    }
+
+    .movie-header {
+        color: lavender;
+    }
+
+    .movie-description {
+        color: lavender;
+    }
+
+
     .all-info {
         flex-direction: row;
         justify-content: space-between;

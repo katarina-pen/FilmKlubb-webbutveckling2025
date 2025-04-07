@@ -10,7 +10,6 @@
     height: auto;
     margin-bottom: 30px;
     padding: 10px;
-    /* background-color: aqua; */
 }
 
 .grid-con-main {
@@ -19,7 +18,6 @@
     min-height: 200px;
     height: auto;
     width: 100%;
-    /* background-color: yellowgreen; */
 }
 
 
@@ -27,7 +25,6 @@
     display: grid;
     min-height: 200px;
     margin-bottom: 20px;
-    /* background-color: aquamarine; */
 }
 
 
@@ -45,6 +42,8 @@
     width: auto;
 }
 
+
+/* Hamburgar menyn koden är gjord / lånad av dev.to */
 .hamburger {
     position: fixed;
     z-index: 100;
@@ -93,6 +92,9 @@
 .Page-title {
     text-align: center;
     font-family: "Public Sans", sans-serif;
+    color: rebeccapurple;
+    text-shadow: 1px 1px white;
+    font-size: 30px;
 }
 
 .about {
@@ -100,8 +102,11 @@
     padding: 15px;
     margin-bottom: 20px;
     font-family: "Public Sans", sans-serif;
+    color: lavender;
 }
 
+
+/* Slideshown koden är gjord/lånad av w3schools  */
 /* SLIDESHOW */
 * {
     box-sizing: border-box
@@ -115,18 +120,19 @@
     font-family: "Public Sans", sans-serif;
 }
 
-/* Hide the images by default */
-.mySlides {
-    /* display: none; */
-}
 
 .mySlides img {
     width: 100%;
     max-width: 600px;
-    /* Adjust this to your desired max width */
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.rest img {
+    width: 300px;
+    height: 337px;
+    object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -303,6 +309,10 @@
         background-color: rebeccapurple;
     }
 
+    .Page-title {
+        background-image: none;
+        font-size: 30px;
+    }
 
 
     /* Adjust main content to be side by side */

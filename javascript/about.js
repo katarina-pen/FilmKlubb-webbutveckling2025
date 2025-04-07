@@ -1,7 +1,11 @@
+// Hamburgar menyn koden är gjord / lånad av dev.to
 const menu = document.querySelector(".menu")
 const hamburger = document.querySelector(".hamburger")
 const closeIcon = document.querySelector(".closeIcon")
 const menuIcon = document.querySelector(".menuIcon")
+
+menuIcon.style.display = "block";
+closeIcon.style.display = "none";
 
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
